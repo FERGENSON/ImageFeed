@@ -1,14 +1,10 @@
-//
-//  ViewController.swift
-//  ImageFeed
-//
-//  Created by macbook on 25.10.2024.
-//
 
 import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet private var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
