@@ -7,6 +7,9 @@ class ImagesListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.register(ImagesListCell.self, forCellReuseIdentifier: ImagesListCell.reuseIdentifier)
+        tableView.rowHeight = 200
+        
     }
     
 }
@@ -22,6 +25,17 @@ extension ImagesListViewController:UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: ImagesListCell.reuseIdentifier, for: indexPath)
+        
+        guard let imageListCell = cell as? ImagesListCell else {
+            print ("Ошибка приведения ячейки")
+            return UITableViewCell()
+        }
+        
+        configCell(for:imageListCell)
+        return imageListCell
     }
+    
+    func configCell(for cell: ImagesListCell) { }
 }
