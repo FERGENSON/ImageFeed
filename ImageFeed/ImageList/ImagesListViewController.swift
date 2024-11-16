@@ -10,7 +10,6 @@ class ImagesListViewController: UIViewController {
         super.viewDidLoad()
         tableView.register(ImagesListCell.self, forCellReuseIdentifier: ImagesListCell.reuseIdentifier)
         tableView.rowHeight = 200
-        
     }
     
 }
