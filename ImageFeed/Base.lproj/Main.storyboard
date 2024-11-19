@@ -36,9 +36,15 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="TZi-r2-KZq">
                                                     <rect key="frame" x="20" y="11" width="353" height="176"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="16"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.MaskToBounds" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="27 августа 2022" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lB-T1-vjO">
-                                                    <rect key="frame" x="28.000000000000007" y="163.66666666666666" width="96.666666666666686" height="15.333333333333343"/>
+                                                    <rect key="frame" x="28" y="163.66666666666666" width="337" height="15.333333333333343"/>
                                                     <fontDescription key="fontDescription" name="YSDisplay-Medium" family="YS Display" pointSize="13"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -57,6 +63,7 @@
                                             <constraints>
                                                 <constraint firstItem="7lB-T1-vjO" firstAttribute="bottom" secondItem="TZi-r2-KZq" secondAttribute="bottom" constant="-8" id="418-kF-1RP"/>
                                                 <constraint firstItem="TZi-r2-KZq" firstAttribute="top" secondItem="dFz-f6-DUP" secondAttribute="topMargin" id="HRT-fM-XZU"/>
+                                                <constraint firstItem="7lB-T1-vjO" firstAttribute="trailing" secondItem="TZi-r2-KZq" secondAttribute="trailing" constant="-8" id="NHN-6g-eY2"/>
                                                 <constraint firstItem="TZi-r2-KZq" firstAttribute="leading" secondItem="dFz-f6-DUP" secondAttribute="leadingMargin" id="QcI-YH-vzE"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="TZi-r2-KZq" secondAttribute="trailing" id="Xua-yR-SKZ"/>
                                                 <constraint firstItem="6XK-RL-wnu" firstAttribute="top" secondItem="TZi-r2-KZq" secondAttribute="top" id="Z8u-hv-w9M"/>
