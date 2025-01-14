@@ -13,6 +13,8 @@
 		FA22DC752CCBC18A0025F1F4 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FA22DC742CCBC18A0025F1F4 /* Base */; };
 		FA22DC772CCBC18B0025F1F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA22DC762CCBC18B0025F1F4 /* Assets.xcassets */; };
 		FA22DC7A2CCBC18B0025F1F4 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FA22DC792CCBC18B0025F1F4 /* Base */; };
+		FA76B73D2D30272D00AD41CF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA76B73C2D30272D00AD41CF /* ProfileViewController.swift */; };
+		FA76B73F2D34458E00AD41CF /* SingleImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA76B73E2D34458E00AD41CF /* SingleImageViewController.swift */; };
 		FAE1E6A02CE864B2008EC34B /* ImageListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE1E69F2CE864B2008EC34B /* ImageListCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		FA22DC762CCBC18B0025F1F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA22DC792CCBC18B0025F1F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA22DC7B2CCBC18B0025F1F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA76B73C2D30272D00AD41CF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		FA76B73E2D34458E00AD41CF /* SingleImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleImageViewController.swift; sourceTree = "<group>"; };
 		FAE1E69F2CE864B2008EC34B /* ImageListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,10 +62,12 @@
 		FA22DC6C2CCBC18A0025F1F4 /* ImageFeed */ = {
 			isa = PBXGroup;
 			children = (
+				FA76B73C2D30272D00AD41CF /* ProfileViewController.swift */,
 				FA22DC6D2CCBC18A0025F1F4 /* AppDelegate.swift */,
 				FA22DC6F2CCBC18A0025F1F4 /* SceneDelegate.swift */,
 				FA22DC712CCBC18A0025F1F4 /* ImageListViewController.swift */,
 				FAE1E69F2CE864B2008EC34B /* ImageListCell.swift */,
+				FA76B73E2D34458E00AD41CF /* SingleImageViewController.swift */,
 				FA22DC732CCBC18A0025F1F4 /* Main.storyboard */,
 				FA22DC762CCBC18B0025F1F4 /* Assets.xcassets */,
 				FA22DC782CCBC18B0025F1F4 /* LaunchScreen.storyboard */,
@@ -143,7 +149,9 @@
 			files = (
 				FA22DC722CCBC18A0025F1F4 /* ImageListViewController.swift in Sources */,
 				FAE1E6A02CE864B2008EC34B /* ImageListCell.swift in Sources */,
+				FA76B73D2D30272D00AD41CF /* ProfileViewController.swift in Sources */,
 				FA22DC6E2CCBC18A0025F1F4 /* AppDelegate.swift in Sources */,
+				FA76B73F2D34458E00AD41CF /* SingleImageViewController.swift in Sources */,
 				FA22DC702CCBC18A0025F1F4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
