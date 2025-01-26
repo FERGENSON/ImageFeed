@@ -98,7 +98,7 @@
                     <navigationItem key="navigationItem" id="Jvx-5O-XSf"/>
                     <connections>
                         <outlet property="tableView" destination="w03-M1-HnP" id="jbK-je-0av"/>
-                        <segue destination="5H3-tO-6a2" kind="show" identifier="ShowSingleImage" id="XRh-NX-P59"/>
+                        <segue destination="5H3-tO-6a2" kind="presentation" identifier="ShowSingleImage" modalPresentationStyle="fullScreen" id="XRh-NX-P59"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -108,22 +108,36 @@
         <!--Single Image View Controller-->
         <scene sceneID="xIt-Jr-CSp">
             <objects>
-                <viewController id="5H3-tO-6a2" customClass="SingleImageViewController" customModule="ImageFeed" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="5H3-tO-6a2" customClass="SingleImageViewController" customModule="ImageFeed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GQo-gx-UCP">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="g2V-Dm-4Rw">
-                                <rect key="frame" x="0.0" y="91" width="428" height="752"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tak-P8-w6Y">
+                                <rect key="frame" x="9" y="9" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="BAK-0E-kh3"/>
+                                    <constraint firstAttribute="height" constant="48" id="UsC-pz-zCT"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="back_button"/>
+                                <connections>
+                                    <action selector="didTapBackButton" destination="5H3-tO-6a2" eventType="touchUpInside" id="UIF-nF-MmJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="677-eb-x2c"/>
                         <color key="backgroundColor" name="YP Black"/>
                         <constraints>
-                            <constraint firstItem="677-eb-x2c" firstAttribute="trailing" secondItem="g2V-Dm-4Rw" secondAttribute="trailing" id="1MH-UJ-7kf"/>
-                            <constraint firstItem="g2V-Dm-4Rw" firstAttribute="leading" secondItem="677-eb-x2c" secondAttribute="leading" id="3vR-sd-ZaX"/>
-                            <constraint firstItem="g2V-Dm-4Rw" firstAttribute="top" secondItem="677-eb-x2c" secondAttribute="top" id="Cpu-JQ-ngm"/>
-                            <constraint firstItem="677-eb-x2c" firstAttribute="bottom" secondItem="g2V-Dm-4Rw" secondAttribute="bottom" id="cQo-5p-Tdv"/>
+                            <constraint firstItem="tak-P8-w6Y" firstAttribute="top" secondItem="677-eb-x2c" secondAttribute="top" constant="9" id="8kU-l1-yaq"/>
+                            <constraint firstItem="g2V-Dm-4Rw" firstAttribute="top" secondItem="GQo-gx-UCP" secondAttribute="top" id="PlG-85-L25"/>
+                            <constraint firstItem="g2V-Dm-4Rw" firstAttribute="trailing" secondItem="GQo-gx-UCP" secondAttribute="trailing" id="csV-Xp-QfV"/>
+                            <constraint firstItem="g2V-Dm-4Rw" firstAttribute="bottom" secondItem="GQo-gx-UCP" secondAttribute="bottom" id="lEp-eK-4qK"/>
+                            <constraint firstItem="tak-P8-w6Y" firstAttribute="leading" secondItem="677-eb-x2c" secondAttribute="leading" constant="9" id="oRb-Y4-xwH"/>
+                            <constraint firstItem="g2V-Dm-4Rw" firstAttribute="leading" secondItem="GQo-gx-UCP" secondAttribute="leading" id="tUK-Ci-YrK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7k0-92-7zk"/>
@@ -253,6 +267,7 @@
         <image name="0" width="1600" height="1059"/>
         <image name="Active" width="42" height="42"/>
         <image name="Exit" width="24" height="24"/>
+        <image name="back_button" width="24" height="24"/>
         <image name="profile_image" width="70" height="70"/>
         <image name="tab_editorial_active" width="75" height="49"/>
         <image name="tab_profile_active" width="75" height="49"/>
