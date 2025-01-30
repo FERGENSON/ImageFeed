@@ -12,7 +12,7 @@ final class SingleImageViewController:UIViewController {
     
     @IBOutlet private var imageView: UIImageView!
     
-    @IBOutlet private weak var scrollView: UIScrollView!
+   //@IBOutlet private weak var scrollView: UIScrollView!
     
     @IBAction private func didTapBackButton() {
         dismiss(animated: true, completion: nil)
@@ -21,8 +21,8 @@ final class SingleImageViewController:UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         imageView.image = image
-        scrollView.minimumZoomScale = 0.1
-        scrollView.maximumZoomScale = 1.25
+        //scrollView.minimumZoomScale = 0.1
+        //scrollView.maximumZoomScale = 1.25
     }
     
 }
